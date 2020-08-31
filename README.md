@@ -28,3 +28,27 @@ After Installing the right installation for your OS you need to open Terminal on
 
 Docker will take care of downloading the latest version of Redis and the run it.
 If Environment stops or you did restart the machine you can easily run it again from the Docker Software, by opening it and then press on the (PLAY BUTTON :P), and that's it
+
+# More
+If you wish to run the server without the chat app you can do some stuff, and then you good to go:
+
+- Comments Settings APPS:
+    Go to setting.py and comment out the below lines
+    > 'django.contrib.auth',
+    > 'django.contrib.contenttypes',
+    > 'django.contrib.sessions',
+    > ....
+    > # Created APPs
+    > 'addon',
+    > 'account',
+    > # 'chat', ---> this one
+    > 'idea',
+
+    > # Third-Party APPs
+    > 'rest_framework',
+    > 'rest_framework.authtoken',
+    > 'django_countries',
+    > # 'redis', ---> this one
+    > # 'django_redis', ---> this one
+    > # 'channels', ---> this one
+
