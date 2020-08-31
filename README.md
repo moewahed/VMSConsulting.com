@@ -34,6 +34,7 @@ If you wish to run the server without the chat app you can do some stuff, and th
 
 - Comments Settings APPS:
     Go to setting.py and comment out the below lines
+    </code>
     > 'django.contrib.auth',
     > 'django.contrib.contenttypes',
     > 'django.contrib.sessions',
@@ -51,4 +52,5 @@ If you wish to run the server without the chat app you can do some stuff, and th
     > # 'redis', ---> this one
     > # 'django_redis', ---> this one
     > # 'channels', ---> this one
+    </code>
 
