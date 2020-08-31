@@ -35,22 +35,22 @@ If you wish to run the server without the chat app you can do some stuff, and th
 - Comments Settings APPS:
     Go to setting.py and comment out the below lines
     </code>
-    > 'django.contrib.auth',
-    > 'django.contrib.contenttypes',
-    > 'django.contrib.sessions',
-    > ....
-    > # Created APPs
-    > 'addon',
-    > 'account',
-    > # 'chat', ---> this one
-    > 'idea',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    ....
+    \# Created APPs
+    'addon',
+    'account',
+    'chat', ---> this one
+    'idea',
 
-    > # Third-Party APPs
-    > 'rest_framework',
-    > 'rest_framework.authtoken',
-    > 'django_countries',
-    > # 'redis', ---> this one
-    > # 'django_redis', ---> this one
-    > # 'channels', ---> this one
+    \# Third-Party APPs
+    'rest_framework',
+    'rest_framework.authtoken',
+    'django_countries',
+    \# 'redis', ---> this one
+    \# 'django_redis', ---> this one
+    \# 'channels', ---> this one
     </code>
 
