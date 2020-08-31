@@ -30,6 +30,18 @@ Docker will take care of downloading the latest version of Redis and the run it.
 If Environment stops or you did restart the machine you can easily run it again from the Docker Software, by opening it and then press on the (PLAY BUTTON :P), and that's it
 
 # More
+You can Change the Email Config in setting.py with your Gmail, Yahoo, Hotmail, or what ever you want, in this project the SMTP service we used is Google
+```
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com' # We decaler Gmail SMTP as the HOST email, or search in Google for "smtp django (Yehoo!, HotMail, etc)"
+EMAIL_PORT = 587 # Port of Gmail SMTP, or search in Google for "smtp django (Yehoo!, HotMail, etc) port"
+EMAIL_HOST_USER = 'email@gmail.com' # Your Email
+EMAIL_HOST_PASSWORD = 'password' # Not the Actual Password, you can set a third-party app password using Gmail follow the link 
+                                 # https://support.google.com/mail/answer/185833?hl=en
+
+```
+
+
 If you wish to run the server without the chat app you can do some stuff, and then you good to go:
 
 - Comments Settings APPS:
@@ -54,3 +66,16 @@ If you wish to run the server without the chat app you can do some stuff, and th
     \# 'channels', ---> this one
     ```
 
+- Also I recommend to comment the Channel Layers Config in setting.py
+```
+# Redis Config
+# CHANNEL_LAYERS = {
+#    'default': {
+#        'BACKEND': 'channels_redis.core.RedisChannelLayer',
+#        'CONFIG': {
+#            "hosts": [('127.0.0.1', 6379)],
+#            # "hosts": [os.environ.get('REDIS_URL', 'redis://localhost:6379')]
+#        },
+#    },
+#}
+```
